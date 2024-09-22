@@ -12,6 +12,17 @@ const mul=(a,b)=> a*b;
 const myclass='Div';
 const numbers=[1,2,3,4,5];
 
+const userinfo=[
+  {
+    name:'shubham',
+    age:21
+  },
+  {
+    name:'Yogendra',
+    age:22
+  }
+]
+
 function App(){
   return(
     <>
@@ -24,6 +35,12 @@ function App(){
      {numbers.map((number)=>(
        <ul key={Math.random}>
         <li>{number}</li>
+       </ul>
+     ))}
+
+     {userinfo.map((user)=>(
+       <ul key={Math.random}>
+        <li>{user.name}</li>
        </ul>
      ))}
     </>
